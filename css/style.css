@@ -616,4 +616,44 @@ body {
   }
 }
 
-@media (max-width: 365px) {}
+@media (max-width: 365px) {
+  .header.sticky {
+    padding: 1rem 10%;
+  }
+
+  .home {
+    min-height: 20vh;
+  }
+
+  .home-txt {
+    padding-top: 2rem;
+  }
+
+  .home-txt h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-txt h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .home-txt p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu-box {
+    height: 39rem;
+  }
+
+  .contact-container {
+    padding: 0 3rem;
+  }
+
+  .contact-ifood {
+    width: 17rem;
+    margin-right: 3rem;
+  }
+
+}
