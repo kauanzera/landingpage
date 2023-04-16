@@ -272,7 +272,7 @@ body {
 }
 
 .menu-container .menu-box {
-  flex: 1 1 25rem;
+  flex: 1 1 30rem;
   background: var(--white);
   text-align: center;
   border: .2rem solid var(--white);
@@ -308,7 +308,7 @@ body {
 .menu-box {
   background-color: rgba(0, 0, 0, 0.153);
   border-radius: .5rem;
-  height: 32rem;
+  height: 36rem;
 }
 
 .menu-box img {
@@ -376,7 +376,7 @@ body {
   background-color: black;
   position: relative;
   z-index: -2;
-  padding: 3rem 2rem 0 2rem;
+  padding: 3rem 2rem;
 }
 
 #contact:before {
@@ -451,7 +451,9 @@ body {
 
 .footer {
   position: relative;
-  z-index: 5;
+  z-index: 100;
+  background-color: var(--black);
+  padding: 1rem 3rem;
 }
 
 .footer p {
@@ -465,17 +467,12 @@ body {
   justify-content: space-between;
 }
 
-.footer-top {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-
 .footer-iconTop {
   width: 3rem;
+  height: 3rem;
   justify-content: center;
   align-items: center;
-  padding: .4rem;
+  padding: .2rem .4rem;
   background: var(--red);
   border-radius: 50%;
   transition: .5s ease;
@@ -517,7 +514,7 @@ body {
   border-radius: 50%;
   font-size: 1.7rem;
   color: var(--black);
-  margin: 3rem 0 3rem 1.5rem;
+  margin-right: 1.5rem;
   transition: .5s ease;
 }
 
@@ -540,6 +537,16 @@ body {
 }
 
 /* BREAKPOINTS */
+@media(max-width: 1440px) {
+  .menu-container .menu-box {
+    flex: 1 1 25rem;
+  }
+
+  .menu-box {
+    height: 32rem;
+  }
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
