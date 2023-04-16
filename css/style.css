@@ -616,7 +616,7 @@ body {
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 415px) {
   .header.sticky {
     padding: 1rem 10%;
   }
@@ -645,6 +645,7 @@ body {
 
   .menu-box {
     height: 39rem;
+    flex: 1 1 13rem;
   }
 
   .contact-container {
