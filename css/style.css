@@ -2,11 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
+@font-face {
+  font-family: "APOLLO";
+  src: url(../fonts/apollo/APOLLO.otf);
+}
+
+@font-face {
+  font-family: "Aurelio";
+  src: url(../fonts/aurelio/Aurelio-Unicase_Trial.ttf);
+}
+
 :root {
-  --black: #28292c;
+  --black: #171717;
   --white: #fff;
-  --gray: #f7f7f7;
-  --red: #b11200;
+  --gray: #e6e7e8;
+  --red: #4e5256;
 }
 
 * {
@@ -29,15 +39,6 @@ body {
   font-family: 'Anuphan', sans-serif;
 }
 
-/* #home,
-#menu {
-  min-height: 100vh;
-}
-
-#contact {
-  height: 50vh;
-} */
-
 .header {
   position: fixed;
   top: 0;
@@ -58,13 +59,14 @@ body {
 }
 
 #logo {
-  font-size: 3rem;
-  width: 2.9rem;
-  height: 2.9rem;
   border-radius: 50%;
-  /* color: #ffa500; */
   animation: blink linear infinite 2s;
   margin-right: 1.5rem;
+}
+
+.logo {
+  width: 7rem;
+  border-radius: 50%;
 }
 
 /* animation: blink linear infinite 2s; */
@@ -75,8 +77,7 @@ body {
 }
 
 .logo-nome h1 {
-  font-size: 1.5rem;
-  animation: blink linear infinite 5s;
+  /* animation: blink linear infinite 5s; */
   font-family: 'Tilt Neon', cursive;
 }
 
@@ -92,7 +93,7 @@ body {
   24%,
   55% {
     color: #111;
-    text-shadow: none;
+    box-shadow: none;
   }
 
   0%,
@@ -106,14 +107,10 @@ body {
     /*     color: #fccaff;
     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    box-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
-
-/* .logo:hover {
-  background-color: blue;
-} */
 
 .logo img {
   width: 100%;
@@ -233,16 +230,17 @@ body {
 }
 
 .menu h3:hover {
-  color: rgb(122, 25, 14);
+  color: #27292a;
   --background-color: white;
   --stroke-color: var(--red);
   transition: 2s;
 }
 
 .menu h4 {
-  font-weight: 600;
+  font-family: 'Aurelio';
+  font-weight: 400;
   font-size: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   text-align: center;
   --x-offset: -0.0625em;
   --y-offset: 0.0625em;
@@ -307,12 +305,12 @@ body {
 
 .menu-box {
   background-color: rgba(0, 0, 0, 0.153);
-  border-radius: .5rem;
+  border-radius: 1rem;
   height: 36rem;
 }
 
 .menu-box img {
-  border-radius: .3rem;
+  border-radius: 1rem;
   width: 100%;
 }
 
