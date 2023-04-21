@@ -223,7 +223,7 @@ body {
   --y-offset: 0.0625em;
   --stroke: 0.025em;
   --background-color: white;
-  --stroke-color: #b1120072;
+  --stroke-color: #43373672;
   text-shadow:
     var(--x-offset) var(--y-offset) 0px var(--background-color),
     calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
@@ -310,21 +310,13 @@ body {
 }
 
 .menu-box img {
-  border-radius: 1rem;
+  border-radius: 0.8rem 0.8rem 0 0;
   width: 100%;
 }
 
 .menu-box img:hover {
   opacity: 1;
   transition: 1s ease;
-}
-
-.price {
-  width: 100px;
-  padding: 1rem 0;
-  background-color: var(--red);
-  position: absolute;
-  font-size: 1.5rem;
 }
 
 /* 
